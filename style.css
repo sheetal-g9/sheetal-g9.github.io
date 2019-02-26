@@ -1,0 +1,57 @@
+body {
+	background: lightblue;
+}
+
+html, body {
+	height: 100%;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+p {
+	margin:0 0;
+}
+
+img {
+	border-radius: 50%;
+	border:2px solid #31a1ce;
+}
+
+.thumbnail {
+	text-align: center;
+}
+
+.my_icon {
+	margin-top: 20px;
+	text-align:center;
+}
+
+.icon {
+	margin: 0 0.8%;
+	font-size: 2.5em;
+}
+
+.container {
+	padding:70px;
+	background: white;
+	height: 100%;
+}
+
+.description {
+	margin-top: 10px;
+	text-align: center;
+}
+
+#name {
+	font-family: Raleway;
+	color: #212121;
+	font-style: bold;
+}
+
+#batch, #college {
+	font-family: Crimson-Text;
+	color: #616161;
+}
