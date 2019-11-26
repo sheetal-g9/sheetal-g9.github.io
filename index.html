@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Collapsible sidebar using Bootstrap 4</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/solid.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/fontawesome.js"></script>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+        	<p></p>
+        	<div class="thumbnail" >
+				<figure>
+					<a href="https://i.imgur.com/9x0oq5D.jpg"> <img id="profile_pic" src="https://i.imgur.com/9x0oq5D.jpg"> </a>
+				</figure>
+			</div>
+            <div class="sidebar-header">
+                <h3>Sheetal Gupta</h3>
+                <span>Android Developer, Competitive Coder</span>
+            </div>
+
+            <ul class="list-unstyled components">
+                <!-- <p>Dummy Heading</p> -->
+                <!-- <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">Home 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 3</a>
+                        </li>
+                    </ul>
+                </li> -->
+                <!-- <li>
+                    <a href="#about">About</a>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Page 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 3</a>
+                        </li>
+                    </ul>
+                </li> --><!-- 
+                <li>
+                    <a href="#">Resume</a>
+                </li> --><!-- 
+                <li>
+                    <a href="#contact">Contact</a>
+                </li> -->
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <a href="https://drive.google.com/open?id=1KWMFOQ-ethRa0zTsFvrK0maFAF1G6nxD" class="hov resume">Resume</a>
+                </li>
+                <!-- <li>
+                    <a href="" class="article">Back to article</a>
+                </li> -->
+            </ul>
+            <div class="my_icon">   
+                        <a class="icon" title="Github" href="https://github.com/sheetal-g9"><i class="fab fa-github"></i></a>
+                        <a class="icon" title="LinkedIn" href="https://www.linkedin.com/in/sheetal-gupta-7b0719152/"><i class="fab fa-linkedin"></i></a>
+                        <a class="icon" title="Facebook" href="https://www.facebook.com/profile.php?id=100021865192488"><i class="fab fa-facebook"></i></a>
+                        <a class="icon" title="Twitter" href="https://twitter.com/sheetal_g9"><i class="fab fa-twitter"></i></a>
+                    </div>
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <!-- <li class="nav-item active">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li> -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div id="sub-content">
+                    
+                <h2 id="about">About</h2>
+                
+                <div class="">
+                    <p><i class="fa fa-suitcase fa-fw w3-margin-right w3-large w3-text-teal"></i> B.tech 3rd Year Student</p>
+                    <p>Computer Science and Engineering</p>
+                    <p>Indian Institute of Technlogy Patna</p>
+                </div>  
+
+                <div class="line"></div>
+
+                <div id="skills">
+                	<h2>Skills</h2>
+                    <div class="">
+                        <h5>Languages</h5>
+                        <p>C, C++, Java, Python</p>
+                        <h5>Libraries Used</h5>
+                        <p>RxJava, OpenCV-Python</p>
+                    </div>
+                </div>
+
+                <div class="line"></div>
+
+                <h2>Projects</h2>
+
+                <h5>TensorFlow at the Edge for Wireless Drones.</h5>
+                <p>An edge computation project</p>  
+                <p>The target of this project is to reduce the load on servers (cloud in this case) by performing some
+                computation on the edge device before sending the feed to central system. It uses the drone video
+                footage for the task of object detection (as an example), and only send the data to cloud after handling
+                some computation on the edge device.</p>
+                <p>Key features : Raspberry Pi, TensorFlow, OpenCV</p>
+                <p><span> Supervisor: Dr. Rajeev Mishra </span> <span class="right-side">Team Members: Anubhav Jangra, Shivansh Shukla</span></p>
+
+                <br>
+                
+                <h5>IITP-Connect</h5>
+                <p>An Android app for IIT Patna Student Community</p>
+
+
+                <div class="line"></div>
+
+                <h2>Education</h2>
+                
+                <h5>Indian Institute of Technology Patna <span class="right-side"><i class="fa fa-calendar fa-fw"></i> August 2017-Present</span></h5>
+                <p>Bachelor in Technology <span class="right-side"> Overall CPI: 9.23/10</span></p>
+                <p>Department of Computer Science and Engineering</p>
+
+                <br>
+                
+                <h5>Blossom Senior Secondary School <span class="right-side"><i class="fa fa-calendar fa-fw"></i> April 2015-April 2017</span></h5>
+                <p>Intermediate <span class="right-side">Overall Percentage: 96.8%</span></p>
+
+                <br>
+
+                <h5>Blossom Senior Secondary School <span class="right-side"><i class="fa fa-calendar fa-fw"></i> April 2013-April 2015</span></h5>
+                <p>High School <span class="right-side">Overall CGPA: 10</span></p>
+
+                <div class="line"></div>
+
+                <div class="por">
+                    <h2>Post of Responsibility</h2>    
+                </div>
+
+                <div class="line"></div>
+
+    	        <div id="contact">
+    	        
+                	<h2>Contact</h2>
+
+    	        	<a class="hov" title="Gmail" href="mailto:sheetalg.me@gmail.com">
+    					<i class="far fa-envelope small-icon"></i>
+    					<span>  Email: </span> <span>sheetalg.me@gmail.com</span>
+    				</a>	
+    				
+    				<br>
+
+    				<a class="hov" href="skype:sheetalg.me?call"><i class="fab fa-skype small-icon"></i> Skype: live:sheetalg.me</a>
+
+    				<br>
+
+    				<span><i class="fa fa-phone-alt small-icon"></i> Phone: 9519539712</span>
+    	  
+    	        <!-- 	<div class="my_icon">	
+    					<a class="icon" title="Github" href="https://github.com/sheetal-g9"><i class="fab fa-github"></i></a>
+    					<a class="icon" title="LinkedIn" href="https://www.linkedin.com/in/sheetal-gupta-7b0719152/"><i class="fab fa-linkedin"></i></a>
+    					<a class="icon" title="Facebook" href="https://www.facebook.com/profile.php?id=100021865192488"><i class="fab fa-facebook"></i></a>
+    					<a class="icon" title="Twitter" href="https://twitter.com/sheetal_g9"><i class="fab fa-twitter"></i></a>
+    				</div>
+    	   -->
+    	        </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
