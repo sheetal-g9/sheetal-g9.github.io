@@ -97,7 +97,7 @@ a, a:hover, a:focus {
 }
 
 #sidebar ul li.active > a, a[aria-expanded="true"] {
-    color: #fff;
+    /*color: #fff;*/
     background: #6d7fcc;
 }
 
@@ -343,4 +343,9 @@ h2 {
   .modal-content {
     width: 100%;
   }
+}
+
+.with-chevron[aria-expanded='true'] i {
+  display: block;
+  transform: rotate(180deg) !important;
 }
