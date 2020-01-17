@@ -192,7 +192,7 @@ a.article, a.article:hover {
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
-@media (max-width: 768px) {
+@media (max-width: 880px) {
     #sidebar {
         margin-left: -250px;
         transform: rotateY(90deg);
@@ -343,9 +343,36 @@ h2 {
   .modal-content {
     width: 100%;
   }
+
+  .right-side {
+    line-height: 1.7em;
+    float: none;
+    font-size: 0.9em;
+    display: block;
+  }
+
+  #contact div a {
+    padding-left: 40px;
+  }
 }
 
 .with-chevron[aria-expanded='true'] i {
   display: block;
   transform: rotate(180deg) !important;
+}
+
+#contact i {
+  font-size: 2rem;
+}
+
+#contact div {
+  position: relative;
+  left: 2%;
+}
+
+#contact div a {
+  left: 6%;
+  top: 50%;
+  position: absolute;
+  transform: translate(0%, -50%);
 }
